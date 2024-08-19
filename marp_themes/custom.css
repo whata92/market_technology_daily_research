@@ -1,0 +1,156 @@
+/* @theme custom */
+
+@import 'default';
+
+section {
+    justify-content: normal;
+    font-size: 20px;
+    }
+
+section h2{
+    color: rgb(68, 67, 67);
+    font-size: 28px;
+    width: 93%;
+    border-bottom: 2px solid #D7D7D7;
+    position: absolute;
+    top:4%;
+    left:4%;
+}
+
+section h3{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+section p{
+    font-size: 20px;
+}
+
+footer {
+    box-sizing:border-box;
+    border:10px solid #0070C0;
+    background-color:#0070C0;
+    width:100%;
+    left: 0px;
+    bottom: 0px;
+    font:Arial;
+    color : white;
+    background-image: url(./corp-normal.png);
+    background-repeat: no-repeat;
+    background-size: 10%;
+    background-position: 10px top
+}
+
+section.first{
+    justify-content: center;
+    background-image: url(./xxx.jpg);
+    background-repeat: no-repeat;
+    background-size: 10%;
+    background-position-x: 800px;
+    background-position-y: 0px;
+}
+
+section.title{
+    justify-content: center;
+    background-repeat: no-repeat;
+    font-size: 36px;
+    background-size: 20%;
+    background-position-x: right;
+    background-position-y: 20px;
+}
+
+section.first > footer {
+    display:none;
+}
+
+section.first h1{
+    width:80%;
+    font-size: 42px;
+    margin-top: 200px;
+    margin-bottom: 20px;
+    margin-left:200px;
+    text-align: center;
+}
+
+div.bg {
+    width:25%;
+    height:100%;
+    background-color:#0070C0;
+    left:0%;
+    position: absolute;
+}
+
+div.author {
+    text-align: left;
+    font-size: 22px;
+    position: absolute;
+    bottom: 7%;
+    right: 5%;
+}
+
+div.corporate {
+    text-align: left;
+    font-size: 12px;
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+}
+
+section::after {
+    font-size:20px;
+    color:white;
+    bottom:10px;
+}
+
+section.last {
+    background-image: url(./corp-last.png);
+    background-repeat: no-repeat;
+    background-color:#0070C0;
+    background-size: 400px;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+img[alt~="right"] {
+    position: absolute;
+    top: 70px;
+    right: 30px;
+    width: 40%;
+    z-index: -1;
+}
+
+.mermaid {
+    font-size: 20px; /* ここでベースのフォントサイズを設定 */
+}
+
+.mermaid .label {
+    font-size: 18px; /* ノード内のラベルのフォントサイズ */
+}
+
+.mermaid .edgeLabel {
+    font-size: 14px; /* エッジラベルのフォントサイズ */
+}
+
+.mermaid .node rect,
+
+.mermaid .node circle,
+
+.mermaid .node ellipse,
+
+.mermaid .node polygon {
+    fill: #0070C0;
+    stroke: #D7D7D7;
+}
+
+.mermaid .label {
+    color: white;
+}
+
+.mermaid .edgeLabel {
+    background-color: white;
+}
+
+.mermaid .edge .path {
+    stroke: #0070C0;
+}
