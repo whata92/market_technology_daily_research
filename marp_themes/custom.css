@@ -2,10 +2,11 @@
 
 @import 'default';
 
+/* Normal */
 section {
     justify-content: normal;
     font-size: 20px;
-    }
+}
 
 section h2{
     color: rgb(68, 67, 67);
@@ -18,13 +19,22 @@ section h2{
 }
 
 section h3{
-    margin-top: 15px;
+    margin-top: 10px;
     margin-bottom: 10px;
     font-size: 22px;
 }
 
 section p{
     font-size: 20px;
+}
+
+section::after {
+    content: attr(data-marpit-pagination) ' / ' attr(data-marpit-pagination-total);
+    font-size: 20px;
+    color: #FFFFFF;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
 }
 
 footer {
@@ -42,51 +52,44 @@ footer {
     background-position: 10px top
 }
 
-section.first{
-    justify-content: center;
-    background-image: url(./xxx.jpg);
-    background-repeat: no-repeat;
-    background-size: 10%;
-    background-position-x: 800px;
-    background-position-y: 0px;
+footer a{
+    color: #FFFFFF;
 }
 
+/* Title slide */
 section.title{
     justify-content: center;
-    background-repeat: no-repeat;
-    font-size: 36px;
     background-size: 20%;
-    background-position-x: right;
-    background-position-y: 20px;
+    background: linear-gradient(100deg, #ffffff 65%, #0070C0 65%);
 }
 
-section.first > footer {
+section.title > footer {
     display:none;
 }
 
-section.first h1{
+section.title h1{
     width:80%;
-    font-size: 42px;
+    font-size: 36px;
     margin-top: 200px;
     margin-bottom: 20px;
-    margin-left:200px;
-    text-align: center;
-}
-
-div.bg {
-    width:25%;
-    height:100%;
-    background-color:#0070C0;
-    left:0%;
-    position: absolute;
+    margin-left:20px;
 }
 
 div.author {
     text-align: left;
-    font-size: 22px;
+    color: #FFFFFF;
     position: absolute;
-    bottom: 7%;
+    bottom: 5%;
     right: 5%;
+}
+
+div.author p{
+    font-size: 26px;
+}
+
+div.author a{
+    color: #FFFFFF;
+    font-size: 26px;
 }
 
 div.corporate {
@@ -97,11 +100,7 @@ div.corporate {
     left: 50%;
 }
 
-section::after {
-    font-size:20px;
-    color:white;
-    bottom:10px;
-}
+/*  Last slide */
 
 section.last {
     background-image: url(./corp-last.png);
@@ -110,14 +109,6 @@ section.last {
     background-size: 400px;
     background-position-x: center;
     background-position-y: center;
-}
-
-img[alt~="right"] {
-    position: absolute;
-    top: 70px;
-    right: 30px;
-    width: 40%;
-    z-index: -1;
 }
 
 .mermaid {
